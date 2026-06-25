@@ -12,7 +12,7 @@ const buttonVariants = cva(
         default:
           "bg-primary text-primary-foreground shadow-lg hover:bg-primary/80 transition-all transform duration-300",
         reset:
-          "bg-background text-black border border-gray-300 shadow-md hover:bg-gray-100 transition-all transform duration-300",  
+          "bg-background text-foreground border border-gray-300 shadow-md hover:bg-gray-100 transition-all transform duration-300",  
         destructive:
           "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
         outline:

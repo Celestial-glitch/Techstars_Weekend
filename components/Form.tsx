@@ -14,7 +14,7 @@ import { Card } from "@/components/ui/card"
 import { useToast } from "@/components/ui/use-toast"
 import { ToastAction } from "@/components/ui/toast"
 import {useRouter} from "next/navigation";
-import techstarsLogo from "@/public/assets/gswvaranasi.jpg";
+import techstarsLogo from "@/public/startup-weekend-logo.png";
 import ecell from "@/public/assets/iitbhulogo.png";
 import Image from "next/image";
 import comblogo1 from "@/public/assets/comblogo1.jpg";
@@ -272,7 +272,7 @@ const FormComponent: React.FC<FormComponentProps> = ({ userId }) => {
                                         
                                             <div className={`transition-max-height duration-400 overflow-hidden ${dropdownOpen ? 'max-h-48': 'max-h-0'}`}>
                                             <FormDescription className="leading-snug">
-                                                By acquiring a ticket to a Techstars Startup Weekend event, you are agreeing to our <Link href="http://www.techstars.com/terms-of-use/" className="text-black font-medium hover:text-primary" target="_blank">Terms of Use </Link> and <Link href="http://www.techstars.com/privacy-policy-4/" className="text-black font-medium hover:text-primary" target="_blank">Privacy Policy </Link>. If you have questions please reach out to privacy@techstars.com.
+                                                By acquiring a ticket to a Techstars Startup Weekend event, you are agreeing to our <Link href="http://www.techstars.com/terms-of-use/" className="text-foreground font-medium hover:text-primary" target="_blank">Terms of Use </Link> and <Link href="http://www.techstars.com/privacy-policy-4/" className="text-foreground font-medium hover:text-primary" target="_blank">Privacy Policy </Link>. If you have questions please reach out to privacy@techstars.com.
                                             </FormDescription>
                                             </div>
                                         

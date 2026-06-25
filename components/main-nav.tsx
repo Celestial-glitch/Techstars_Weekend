@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
 //@ts-ignore
-import logo from "@/public/assets/gswvaranasi.jpg";
+import logo from "@/public/startup-weekend-logo.png";
 
 import { MainNavItem } from "@/types";
 import { siteConfig } from "@/config/site";

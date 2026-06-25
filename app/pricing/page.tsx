@@ -34,7 +34,7 @@ const Pricing = () => {
         prices.length > 0 ? (
           <>
             <div className="mx-auto max-w-4xl text-center mt-10 items-center">
-              <h2 className="text-3xl font-bold leading-7 text-green-500">
+              <h2 className="text-3xl font-bold leading-7 text-primary">
                 Get Ticket
               </h2>
               {/*<p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">*/}

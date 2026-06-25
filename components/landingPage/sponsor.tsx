@@ -50,7 +50,7 @@ type Props = OwnProps;
 export const Sponsor: FunctionComponent<Props> = (props) => {
     return (
         <div  className="mt-7 max-w-screen">
-            <div className="font-semibold text-2xl text-black uppercase text-center mb-7">global sponsors</div>
+            <div className="font-semibold text-2xl text-foreground uppercase text-center mb-7">global sponsors</div>
             <div className="flex flex-wrap justify-center items-center" >
                 {
                     ListOfSponsor.map((data,index)=>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
-import techstarsLogo from "@/public/Techstars_Logo_Primary_Black.png";
+import techstarsLogo from "@/public/startup-weekend-logo.png";
 import React from "react";
 
 export default function Techstar() {

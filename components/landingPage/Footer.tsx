@@ -1,7 +1,7 @@
 import Image from "next/image"
 import React, {FunctionComponent} from "react";
 import ecell from "@/public/assets/iitbhulogo.png";
-import techstarsLogo from "@/public/Techstars_Logo_Primary_Black.png";
+import techstarsLogo from "@/public/startup-weekend-logo.png";
 import Link from "next/link";
 interface OwnProps {}
 type Props = OwnProps;
@@ -20,7 +20,7 @@ export const Footer: FunctionComponent<Props> = (props) => {
             </a>
             </div>
             </div>
-            <div className="text-gray-500 text-xs sm:text-sm md:max-w-[60%]">By acquiring a ticket to a Techstars Startup Weekend event, you are agreeing to our <Link href="http://www.techstars.com/terms-of-use/" className="text-black font-medium" target="_blank">Terms of Use </Link> and <Link href="http://www.techstars.com/privacy-policy-4/" className="text-black font-medium" target="_blank">Privacy Policy </Link>. If you have questions please reach out to privacy@techstars.com.</div>
+            <div className="text-gray-500 text-xs sm:text-sm md:max-w-[60%]">By acquiring a ticket to a Techstars Startup Weekend event, you are agreeing to our <Link href="http://www.techstars.com/terms-of-use/" className="text-foreground font-medium" target="_blank">Terms of Use </Link> and <Link href="http://www.techstars.com/privacy-policy-4/" className="text-foreground font-medium" target="_blank">Privacy Policy </Link>. If you have questions please reach out to privacy@techstars.com.</div>
                <div>
                    <div className="flex justify-center items-center">
                        <a
