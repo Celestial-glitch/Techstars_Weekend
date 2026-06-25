@@ -3,19 +3,22 @@ import React, {FunctionComponent} from "react";
 import ecell from "@/public/assets/iitbhulogo.png";
 import techstarsLogo from "@/public/startup-weekend-logo.png";
 import Link from "next/link";
+import { Logo } from "@/components/Logo";
+
 interface OwnProps {}
 type Props = OwnProps;
+
 export const Footer: FunctionComponent<Props> = (props) => {
     return (
         <div  className=" max-w-screen mt-4 md:mt-0">
             <hr className="shadow -mt-4"/>
            <div className="m-4 md:flex justify-evenly flex-wrap">
             <div>
-                <div className="flex justify-center items-center">
-                    <a
-                target={"_blank"}
-                href={"https://www.ecelliitbhu.com/"}
-                className=" lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
+               <div className="flex justify-center items-center">
+                   <a
+               target={"_blank"}
+               href={"https://www.ecelliitbhu.com/"}
+               className=" lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
             ><Image src={ecell} alt={"ecell logo"} height={100} width={100}  />
             </a>
             </div>
@@ -28,7 +31,7 @@ export const Footer: FunctionComponent<Props> = (props) => {
                            href={"https://www.techstars.com/"}
                            className=" lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
                        >
-                       <Image src={techstarsLogo} alt={"techstarsLogo"} height={300} width={150}  />
+                       <Logo variant="footer" />
                        </a>
                    </div>
                </div>
