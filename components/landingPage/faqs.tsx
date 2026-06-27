@@ -11,7 +11,7 @@ const Container = styled.div`
   width: 100%;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   margin-top: 40px;
-  border-top: 2px solid #52b752;
+  border-top: 2px solid #3b83f6;
 `;
 
 const Heading = styled.h2`
@@ -31,7 +31,7 @@ const SubHeading = styled.h5`
   font-weight: 600;
   margin-bottom: 40px;
   text-align: center;
-  color: #52b752;
+  color: #3b83f6;
 `;
 
 const Card = styled.div`
@@ -47,10 +47,10 @@ const Card = styled.div`
   margin: 12px 0px;
   background: white;
   transition: all 0.3s ease;
-  border-left: 4px solid #52b752;
+  border-left: 4px solid #3b83f6;
 
   &:hover {
-    box-shadow: 0 4px 20px rgba(82, 183, 82, 0.2);
+    box-shadow: 0 4px 20px rgba(59, 131, 246, 0.2);
     transform: translateY(-2px);
   }
 
@@ -89,7 +89,7 @@ const Answer = styled.div`
 `;
 
 const Button = styled.button`
-  color: #52b752;
+  color: #3b83f6;
   background: none;
   border: none;
   font-size: 2rem;

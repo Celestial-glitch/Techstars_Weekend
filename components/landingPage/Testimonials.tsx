@@ -49,7 +49,7 @@ const Message = styled.p`
 `;
 
 const Name = styled.h3`
-  color: #52b752;
+  color: #3b83f6;
   margin-top: 75px;
   font-weight: bold;
 `;
@@ -61,7 +61,7 @@ const NavButtons = styled.div`
 `;
 
 const Button = styled.button`
-  background-color: #52b752;
+  background-color: #3b83f6;
   color: white;
   border: none;
   padding: 10px 20px;
