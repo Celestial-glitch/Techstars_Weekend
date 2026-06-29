@@ -71,8 +71,8 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       boxShadow: {
-        'green': '0 0 8px rgb(48, 170, 41)', 
-        'greencard': '0 0 2px rgb(48, 170, 41, 0.8)', 
+        'green': '0 0 8px rgb(59, 130, 246)',
+        'greencard': '0 0 2px rgb(59, 130, 246, 0.8)',
       },
     },
   },

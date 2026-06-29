@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import styled from "styled-components";
 import TestimonialsData from "@/lib/listoftestimonials";
 
@@ -49,7 +49,7 @@ const Message = styled.p`
 `;
 
 const Name = styled.h3`
-  color: #52b752;
+  color: #3b83f6;
   margin-top: 75px;
   font-weight: bold;
 `;
@@ -61,7 +61,7 @@ const NavButtons = styled.div`
 `;
 
 const Button = styled.button`
-  background-color: #52b752;
+  background-color: #3b83f6;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -77,9 +77,9 @@ const Button = styled.button`
 const Testimonials: React.FC = () => {
   const testimonials = TestimonialsData.filter((t) => t?.message && t?.name);
   const [index, setIndex] = useState(0);
-  const [fade, setFade] = useState(true); // fade state
+  const [fade, setFade] = useState(true);
 
-  const triggerFade = (direction: "next" | "prev") => {
+  const triggerFade = useCallback((direction: "next" | "prev") => {
     setFade(false);
     setTimeout(() => {
       setIndex((prevIndex) =>
@@ -90,15 +90,15 @@ const Testimonials: React.FC = () => {
           : prevIndex - 1
       );
       setFade(true);
-    }, 200); // allow time for fade-out
-  };
+    }, 200);
+  }, [testimonials.length]);
 
   useEffect(() => {
     const interval = setInterval(() => {
       triggerFade("next");
     }, 5500);
     return () => clearInterval(interval);
-  }, []);
+  }, [triggerFade]);
 
   const current = testimonials[index];
 

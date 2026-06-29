@@ -125,7 +125,7 @@ const Hero: FunctionComponent<Props> = () => {
           </Link>
         </div>
         <div className="px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
-          <span className="font-semibold text-2xl text-black uppercase">
+          <span className="font-semibold text-2xl text-foreground uppercase">
             What is Startup Weekend
           </span>
           <div className="mt-8 align-baseline">

@@ -11,7 +11,7 @@ type Props = OwnProps;
 
 const Heading = styled.h2`
   font-size: 2em;
-  color: #000000;
+  color: hsl(var(--foreground));
   margin-bottom: 20px;
   font-weight: bold;
   text-align: center;
@@ -24,7 +24,7 @@ const JudgeInfo = styled.div`
   h3 {
     margin: 10px 0 5px;
     font-size: 1.2em;
-    color: #52B752;
+    color: hsl(var(--primary));
     font-weight: bold;
   }
 
@@ -37,7 +37,7 @@ const JudgeInfo = styled.div`
   a {
     display: inline-block;
     margin-top: 10px;
-    color: #52B752; /* Green color for the link */
+    color: hsl(var(--primary));
     text-decoration: none;
     font-weight: bold; /* Bold text for the link */
   }
@@ -82,7 +82,7 @@ export const Judges: FunctionComponent<Props> = (props) => {
               <p className="line-clamp-5">{data.info}</p>
               <div>
                 <a href={data.linkedin} target="_blank" rel="noopener noreferrer">
-                  <FaLinkedin style={{ fontSize: '40px' }} />
+                  <FaLinkedin style={{ fontSize: '40px', color: '#0a66c2' }} />
                 </a>
               </div>
             </JudgeInfo>
@@ -94,10 +94,3 @@ export const Judges: FunctionComponent<Props> = (props) => {
 };
 
 export default Judges;
-
-                            
-                               
-                              
-                            
-                        
-       
