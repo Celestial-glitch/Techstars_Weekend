@@ -17,7 +17,7 @@ export const Footer: FunctionComponent<Props> = (props) => {
                <div className="flex justify-center items-center">
                    <a
                target={"_blank"}
-               href={"https://www.ecelliitbhu.com/"}
+               href={"https://www.ecelliitbhu.in/"}
                className=" lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
             ><Image src={ecell} alt={"ecell logo"} height={100} width={100}  />
             </a>
