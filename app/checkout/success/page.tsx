@@ -51,15 +51,28 @@ export default function SuccessPage() {
     setDoc(doc(db, "payments", docId), checkoutSession);
 
     return (
-        <div className="flex flex-col items-center justify-center h-screen">
-          <h1 className="">
-            Your payment of {checkoutSession.payment_intent.amount_received / 100}{" "}
-            is successful
-          </h1>
-          <h2>Customer details</h2>
-          <p>Payment Id: {checkoutSession.payment_intent.id}</p>
-          <p>Customer Name: {checkoutSession.customer_details?.name}</p>
-          <p>Customer Email: {checkoutSession.customer_details?.email}</p>
+        <div className="flex flex-col items-center justify-center h-screen px-4">
+          <div className="bg-zinc-900/60 border border-zinc-800 rounded-xl p-8 max-w-md w-full shadow-2xl backdrop-blur-sm text-center">
+            <div className="w-16 h-16 bg-emerald-500/10 text-emerald-400 rounded-full flex items-center justify-center mx-auto mb-4 border border-emerald-500/30">
+              <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <h1 className="text-2xl font-bold text-zinc-100 mb-2">
+              Payment Successful!
+            </h1>
+            <p className="text-zinc-400 mb-6">
+              Your payment of {checkoutSession.payment_intent.amount_received / 100} has been processed successfully.
+            </p>
+            <div className="text-left bg-zinc-950/50 p-4 rounded-lg border border-zinc-800/80 space-y-2 text-sm text-zinc-300 mb-6">
+              <p><strong className="text-zinc-400">Payment ID:</strong> {checkoutSession.payment_intent.id}</p>
+              <p><strong className="text-zinc-400">Customer Name:</strong> {checkoutSession.customer_details?.name}</p>
+              <p><strong className="text-zinc-400">Customer Email:</strong> {checkoutSession.customer_details?.email}</p>
+            </div>
+            <a href="/" className="inline-block w-full py-2.5 px-4 bg-[#00b0f0] hover:bg-[#009ad4] text-white font-medium rounded-lg transition-colors">
+              Go to Home
+            </a>
+          </div>
         </div>
     );
   } else {

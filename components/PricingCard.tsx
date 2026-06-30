@@ -25,7 +25,7 @@ const PricingCard = ({price}) => {
     }
     
     return (
-        <div className="border-gray-100 shadow-2xl border-1 text-center mt-10 max-w-[1040px] p-4 rounded-xl">
+        <div className="bg-zinc-900/60 border border-zinc-800 hover:border-[#00b0f0]/50 shadow-2xl hover:shadow-[0_0_20px_rgba(0,176,240,0.15)] transition text-center mt-10 max-w-[1040px] p-6 rounded-xl backdrop-blur-sm">
             <div>
                 <div className="relative">
                     <div className="flex flex-col items-center justify-center ">

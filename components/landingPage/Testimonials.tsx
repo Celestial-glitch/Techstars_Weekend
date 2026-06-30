@@ -18,16 +18,16 @@ const Heading = styled.h2`
 `;
 
 const Card = styled.div<{ fade: boolean }>`
-  background-color: white;
-  border: 1px solid #e0e0e0;
+  background-color: rgba(24, 24, 27, 0.6);
+  border: 1px solid rgb(39, 39, 42);
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   padding: 30px;
   max-width: 65vw;
   height: 310px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   transition: opacity 0.4s ease;
   opacity: ${({ fade }) => (fade ? 1 : 0)};
+  backdrop-filter: blur(8px);
 
   @media (max-width: 768px) {
     max-width: 90vw;
@@ -43,13 +43,13 @@ const Card = styled.div<{ fade: boolean }>`
 
 const Message = styled.p`
   font-size: 1em;
-  color: #555;
+  color: rgb(228, 228, 231);
   font-style: italic;
   font-family: cursive;
 `;
 
 const Name = styled.h3`
-  color: #3b83f6;
+  color: #00b0f0;
   margin-top: 75px;
   font-weight: bold;
 `;
@@ -61,15 +61,20 @@ const NavButtons = styled.div`
 `;
 
 const Button = styled.button`
-  background-color: #3b83f6;
+  background-color: #00b0f0;
   color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 6px;
   cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: #009ad4;
+  }
 
   &:disabled {
-    background-color: #ccc;
+    background-color: rgb(63, 63, 72);
     cursor: not-allowed;
   }
 `;

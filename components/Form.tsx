@@ -114,14 +114,14 @@ const FormComponent: React.FC<FormComponentProps> = ({ userId }) => {
         <div className="max-w-full max-h-full py-3 px-3 md:shadow-green rounded-xl bg-background">
             
             <div className="flex flex-col items-center md:gap-2 sm:gap-2 ">
-            <Image src={comblogo1} alt={"ecell in collaboration with techstars"}  className="mt-5 mb-1 sm:h-24 sm:w-40 h-20 w-32"/>
-                    <h1 className="text-2xl sm:text-2xl md:text-3xl font-semibold text-stone-600 text-center mt-2">Welcome, {username}!</h1>
+            <Image src={comblogo1} alt={"ecell in collaboration with techstars"}  className="mt-5 mb-1 sm:h-24 sm:w-40 h-20 w-32 invert brightness-110"/>
+                    <h1 className="text-2xl sm:text-2xl md:text-3xl font-semibold text-zinc-100 text-center mt-2">Welcome, {username}!</h1>
                     {/* <Image src={comblogo1} alt={"IIT BHU X Techstars"} height={190} width={95}> */}
                 </div>
             <div className="flex justify-center items-center md:gap-8 sm:gap-3 gap-2">
                 
               {/* <Image src={ecell} alt={"ecell IITBHU"} height={170} width={85} className="hidden sm:block" /> */}
-              <h1 className="text-2xl sm:text-2xl md:text-3xl font-semibold text-stone-700 text-center">Fill the form to purchase ticket.</h1>
+              <h1 className="text-2xl sm:text-2xl md:text-3xl font-semibold text-zinc-300 text-center">Fill the form to purchase ticket.</h1>
               {/* <Image src={techstarsLogo} alt={"techstarsLogo"} height={170} width={85} className="hidden sm:block" />  */}
             </div>
             <Card className={"max-w-full sm:px-3 px-3 md:px-6 py-6 bg-background"}>
@@ -227,15 +227,15 @@ const FormComponent: React.FC<FormComponentProps> = ({ userId }) => {
                                             <select
                                                 className={cn(
                                                     buttonVariants({ variant: "outline" }),
-                                                    "w-[180px] appearance-none bg-transparent font-normal"
+                                                    "w-[180px] appearance-none bg-zinc-900 border-zinc-800 text-zinc-100 font-normal"
                                                 )}
                                                 {...field}
                                             >
-                                                <option value={"S"}>S</option>
-                                                <option value={"M"}>M</option>
-                                                <option value={"L"}>L</option>
-                                                <option value={"XL"}>XL</option>
-                                                <option value={"2XL"}>2XL</option>
+                                                <option className="bg-zinc-900 text-zinc-100" value={"S"}>S</option>
+                                                <option className="bg-zinc-900 text-zinc-100" value={"M"}>M</option>
+                                                <option className="bg-zinc-900 text-zinc-100" value={"L"}>L</option>
+                                                <option className="bg-zinc-900 text-zinc-100" value={"XL"}>XL</option>
+                                                <option className="bg-zinc-900 text-zinc-100" value={"2XL"}>2XL</option>
                                             </select>
                                         </FormControl>
                                         <ChevronDown className="absolute right-3 top-3 h-3 w-3 opacity-50" />

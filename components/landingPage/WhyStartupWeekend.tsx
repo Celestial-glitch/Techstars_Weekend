@@ -38,12 +38,12 @@ const WhyStartupWeekend: FunctionComponent<Props> = () => {
       <div className="flex flex-wrap justify-center">
       {
           detail.map((data,index)=>{
-             return(<Card key={index} className="max-w-sm m-4 transition ease-in-out hover:scale-110 bg-primary text-white text-center rounded-lg">
+             return(<Card key={index} className="max-w-sm m-4 transition ease-in-out hover:scale-105 bg-zinc-900/60 border border-zinc-800 hover:border-[#00b0f0]/50 hover:shadow-[0_0_20px_rgba(0,176,240,0.2)] text-center rounded-lg p-2 backdrop-blur-sm">
                       <CardHeader>
-                          <CardTitle>{data.title}</CardTitle>
+                          <CardTitle className="text-[#00b0f0] font-bold">{data.title}</CardTitle>
                       </CardHeader>
                       <CardContent>
-                          <p> {data.desc}</p>
+                          <p className="text-zinc-300"> {data.desc}</p>
                       </CardContent>
                   </Card>)
           })

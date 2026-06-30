@@ -9,9 +9,9 @@ const Container = styled.div`
   align-items: center;
   padding: 60px 20px;
   width: 100%;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: linear-gradient(135deg, #09090b 0%, #18181b 100%);
   margin-top: 40px;
-  border-top: 2px solid #3b83f6;
+  border-top: 2px solid #00b0f0;
 `;
 
 const Heading = styled.h2`
@@ -19,7 +19,7 @@ const Heading = styled.h2`
   font-weight: bold;
   margin-bottom: 8px;
   text-align: center;
-  color: #1a1a1a;
+  color: #ffffff;
 
   @media (max-width: 768px) {
     font-size: 2em;
@@ -31,26 +31,30 @@ const SubHeading = styled.h5`
   font-weight: 600;
   margin-bottom: 40px;
   text-align: center;
-  color: #3b83f6;
+  color: #00b0f0;
 `;
 
 const Card = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: #333;
+  color: rgb(228, 228, 231);
   font-size: 1.1rem;
   border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   padding: 24px;
   width: 65vw;
   margin: 12px 0px;
-  background: white;
+  background: rgba(24, 24, 27, 0.6);
+  border: 1px solid rgb(39, 39, 42);
+  border-left: 4px solid #00b0f0;
+  backdrop-filter: blur(8px);
   transition: all 0.3s ease;
-  border-left: 4px solid #3b83f6;
 
   &:hover {
-    box-shadow: 0 4px 20px rgba(59, 131, 246, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 176, 240, 0.15);
+    border-color: rgba(0, 176, 240, 0.4);
+    border-left-color: #00b0f0;
     transform: translateY(-2px);
   }
 
@@ -71,25 +75,25 @@ const Top = styled.div`
 const Question = styled.div`
   flex: 1;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #ffffff;
   cursor: pointer;
 `;
 
 const Answer = styled.div`
   font-size: 0.95em;
-  color: #555;
+  color: rgb(161, 161, 170);
   margin-top: 15px;
   line-height: 1.6;
 
   hr {
     border: none;
-    border-top: 1px solid #e0e0e0;
+    border-top: 1px solid rgb(39, 39, 42);
     margin: 10px 0;
   }
 `;
 
 const Button = styled.button`
-  color: #3b83f6;
+  color: #00b0f0;
   background: none;
   border: none;
   font-size: 2rem;

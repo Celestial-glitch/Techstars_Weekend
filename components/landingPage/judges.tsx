@@ -24,20 +24,20 @@ const JudgeInfo = styled.div`
   h3 {
     margin: 10px 0 5px;
     font-size: 1.2em;
-    color: hsl(var(--primary));
+    color: #00b0f0;
     font-weight: bold;
   }
 
   p {
     margin: 0;
-    color: #757575;
+    color: rgb(161, 161, 170);
     word-wrap: break-word; /* Ensure word wrapping */
   }
 
   a {
     display: inline-block;
     margin-top: 10px;
-    color: hsl(var(--primary));
+    color: #00b0f0;
     text-decoration: none;
     font-weight: bold; /* Bold text for the link */
   }
@@ -52,8 +52,18 @@ const Card = styled.div`
   padding: 20px;
   width: 250px; /* Adjust the width as needed */
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(24, 24, 27, 0.6);
+  border: 1px solid rgb(39, 39, 42);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
   text-align: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: rgba(0, 176, 240, 0.4);
+    box-shadow: 0 0 20px rgba(0, 176, 240, 0.15);
+    transform: translateY(-4px);
+  }
 `;
 
 const JudgesContainer = styled.div`

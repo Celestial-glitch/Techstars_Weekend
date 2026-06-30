@@ -78,7 +78,7 @@ const Hero: FunctionComponent<Props> = () => {
   }, [session]);
 
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section className="bg-background">
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 lg:-mt-28  ">
         <a
           href="https://www.ecelliitbhu.in/"
@@ -191,7 +191,7 @@ const Hero: FunctionComponent<Props> = () => {
     <Image
       src={brex}
       alt="brex"
-      className="-mt-4 lg:w-60 lg:h-28 md:h-14 sm:w-48 sm:h-8 w-32 h-10 mx-auto"
+      className="-mt-4 lg:w-60 lg:h-28 md:h-14 sm:w-48 sm:h-8 w-32 h-10 mx-auto invert"
     />
     <p className="mt-4 text-xl font-semibold">Brex Rewards</p>
   </div>

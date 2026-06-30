@@ -54,13 +54,22 @@ export const Sponsor: FunctionComponent<Props> = (props) => {
             <div className="flex flex-wrap justify-center items-center" >
                 {
                     ListOfSponsor.map((data,index)=>
-                        <div className="border m-2 flex justify-center items-center h-40 rounded-lg p-2 shadow" key={index}>
+                        <div className="border border-zinc-800 bg-zinc-900/40 m-2 flex justify-center items-center h-40 w-72 rounded-lg p-4 shadow-sm hover:border-[#00b0f0]/30 transition" key={index}>
                             <a
                                 target={"_blank"}
                                 href={data.href}
-                                className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
+                                className="flex justify-center items-center hover:opacity-80 transition"
                             >
-                                <Image src={data.src} alt={data.alt} height={400} width={300}  />
+                                <Image 
+                                    src={data.src} 
+                                    alt={data.alt} 
+                                    height={200} 
+                                    width={250} 
+                                    className={cn(
+                                        "object-contain max-h-20 w-auto",
+                                        (data.alt === "brex" || data.alt === "deel") && "invert brightness-200"
+                                    )}
+                                />
                             </a>
                         </div>
                     )
