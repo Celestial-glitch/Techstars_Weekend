@@ -81,7 +81,7 @@ const Hero: FunctionComponent<Props> = () => {
     <section className="bg-white dark:bg-gray-900">
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 lg:-mt-28  ">
         <a
-          href="https://www.ecelliitbhu.com/"
+          href="https://www.ecelliitbhu.in/"
           target="_blank"
           className="inline-flex justify-between items-center  py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
           role="alert"
