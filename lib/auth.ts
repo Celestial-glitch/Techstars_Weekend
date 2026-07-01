@@ -36,21 +36,21 @@ export const authOptions: NextAuthOptions = {
         console.log(user);
         if (!user.email) return false;
         const q = query(
-          collection(db, "users"),
+          collection(db, "users_2026"),
           where("email", "==", user.email)
         );
         const querySnapshot = await getDocs(q);
         // console.log(querySnapshot);
 
         if (querySnapshot.empty) {
-          await setDoc(doc(db, "users", user.id), {
+          await setDoc(doc(db, "users_2026", user.id), {
             ...user,
             formFilled: false,
           });
         } else {
           const userDoc = querySnapshot.docs[0];
           console.log(userDoc);
-          await updateDoc(doc(db, "users", user.id), {
+          await updateDoc(doc(db, "users_2026", user.id), {
             ...user,
             formFilled: userDoc.data().formFilled || false,
           });

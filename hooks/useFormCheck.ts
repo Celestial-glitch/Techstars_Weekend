@@ -13,7 +13,7 @@ const useFormCheck = () => {
     const checkFormStatus = async () => {
       if (!session) return;
 
-      const q = query(collection(db, "users"), where("email", "==", session.user?.email));
+      const q = query(collection(db, "users_2026"), where("email", "==", session.user?.email));
       const querySnapshot = await getDocs(q);
       const data = querySnapshot.docs[0]?.data();
 

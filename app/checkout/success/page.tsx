@@ -25,7 +25,7 @@ export default function SuccessPage() {
   useEffect(() => {
     const fetcher = async () => {
       const q =await query(
-          collection(db, "users"),
+          collection(db, "users_2026"),
           where("email", "==", session?.user?.email)
       );
       const querySnapshot = await getDocs(q);
@@ -44,7 +44,7 @@ export default function SuccessPage() {
         checkoutSession.customer_details?.name +
         checkoutSession.customer_details?.email;
 
-    docID && updateDoc(doc(db, "users", docID!.toString()), {
+    docID && updateDoc(doc(db, "users_2026", docID!.toString()), {
       paymentId: checkoutSession.payment_intent.id,
     });
 

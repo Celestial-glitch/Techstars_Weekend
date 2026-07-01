@@ -35,7 +35,7 @@ const Payment: FunctionComponent<Props> = (props) => {
     if (!session?.user?.email) return;
     const fetcher = async () => {
       const q = query(
-        collection(db, "users"),
+        collection(db, "users_2026"),
         where("email", "==", session?.user?.email)
       );
       const querySnapshot = await getDocs(q);
@@ -70,10 +70,16 @@ const Payment: FunctionComponent<Props> = (props) => {
         <div>
           <iframe
             id="ts-iframe"
-            src="https://www.townscript.com/v2/widget/techstars-weekend-040320/booking"
+            src="https://www.townscript.com/v2/widget/techstars-startup-weekend26-312134/booking"
             height="600"
             width="80%"
           ></iframe>
+          {/* <iframe
+            id="ts-iframe"
+            src="https://www.townscript.com/v2/widget/techstars-weekend-040320/booking"
+            height="600"
+            width="80%"
+          ></iframe> */}
           {/* <iframe
             id="ts-iframe"
             src="https://www.townscript.com/v2/widget/google-startup-weekend-004210/booking"
@@ -158,7 +164,7 @@ export default Payment;
 
 //       try {
 //         const q = query(
-//           collection(db, "users"),
+//           collection(db, "users_2026"),
 //           where("email", "==", session.user.email)
 //         );
 //         const querySnapshot = await getDocs(q);
