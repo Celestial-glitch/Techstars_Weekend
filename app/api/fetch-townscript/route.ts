@@ -1,6 +1,7 @@
 // app/api/fetch-townscript/route.ts
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-dynamic";   //new so no cache 
 export async function GET() {
   try {
     const res = await fetch(
