@@ -19,7 +19,7 @@ export const Footer: FunctionComponent<Props> = (props) => {
                target={"_blank"}
                href={"https://www.ecelliitbhu.in/"}
                className=" lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
-            ><Image src={ecell} alt={"ecell logo"} height={100} width={100}  />
+            ><Image src={ecell} alt={"ecell logo"} height={100} width={100} className="dark:invert" />
             </a>
             </div>
             </div>

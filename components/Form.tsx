@@ -83,7 +83,7 @@ const FormComponent: React.FC<FormComponentProps> = ({ userId }) => {
     async function onSubmit(values: z.infer<typeof FormSchema>) {
        try {
         console.log("inside")
-               const ref = doc(db, "users", userId);
+               const ref = doc(db, "users_2026", userId);
                const updatedValues = {
                 ...values, 
                 formFilled: true

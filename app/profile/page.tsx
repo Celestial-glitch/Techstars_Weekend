@@ -73,7 +73,7 @@ const Page: FunctionComponent<Props> = (props) => {
 
   //   const fetcher = async () => {
   //     const q = query(
-  //       collection(db, "users"),
+  //       collection(db, "users_2026"),
   //       where("email", "==", session.user!.email)
   //     );
 

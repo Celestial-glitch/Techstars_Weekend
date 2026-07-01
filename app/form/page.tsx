@@ -19,7 +19,7 @@ export default function Home() {
   useEffect(() => {
     const fetcher = async () => {
       const q = query(
-        collection(db, "users"),
+        collection(db, "users_2026"),
         where("email", "==", session?.user?.email)
       );
       const querySnapshot = await getDocs(q);
@@ -34,7 +34,7 @@ export default function Home() {
   useEffect(() => {
     const fetcher = async () => {
       const q = query(
-        collection(db, "users"),
+        collection(db, "users_2026"),
         where("email", "==", session?.user?.email)
       );
       const querySnapshot = await getDocs(q);

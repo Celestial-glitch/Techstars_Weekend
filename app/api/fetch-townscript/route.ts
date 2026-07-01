@@ -4,7 +4,8 @@ import { NextResponse } from "next/server";
 export async function GET() {
   try {
     const res = await fetch(
-      "https://www.townscript.com/api/registration/getRegisteredUsers?eventCode=techstars-weekend-040320",
+      // "https://www.townscript.com/api/registration/getRegisteredUsers?eventCode=techstars-weekend-040320",
+      "https://www.townscript.com/api/registration/getRegisteredUsers?eventCode=techstars-startup-weekend26-312134",
 
       {
         method: "GET",

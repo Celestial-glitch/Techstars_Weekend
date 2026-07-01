@@ -9,7 +9,7 @@ export async function POST(request) {
 
     // Query the users collection to find the document by email
     const q = query(
-      collection(db, "users"),
+      collection(db, "users_2026"),
       where("email", "==", userEmailId)
     );
 
